@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildNodes</title>
+</head>
+<body>
+    <h1>El elemento objeto</h1>
+    <h2>La propiedad childer</h2>
+    <p>Lorem , ipsum dolor sit amet consect</p>
+    <p id="demo"> </p>
+
+    <script>
+        const colleccion = document.body.children;
+        let text = "";
+        for(let i=0; i < colleccion.length ; i++){
+            text += colleccion[i].tagName + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

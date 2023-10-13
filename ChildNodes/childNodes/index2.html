@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>El ovjeto Elemento</h1>
+    <h2>Propiedad children.lenght</h2>
+
+    <p>Cuantos elementos tienen "miDIV" ? </p>
+
+    <p id="demo"></p>
+
+    <div id="miDIV">
+        <h2>Para Probar</h2>
+        <p>Esto es un parrafo</p>
+        <p>Esto es un parrafo</p>
+        <p>Esto es un parrafo</p>
+        <h1>Pepe</h1>
+        <h3>Ola</h3>
+    </div>
+
+    <script>
+        let count = document.getElementById("miDIV").children.length;
+        document.getElementById("demo").innerHTML = count;
+    </script>
+
+</body>
+</html>
